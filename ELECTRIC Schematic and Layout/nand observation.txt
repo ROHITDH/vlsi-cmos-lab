@@ -1,0 +1,12 @@
+Y = ~(A.B)
+
+
+NMOS network - Series
+PMOS network - parallel
+
+
+a 	b   (initially)			a	b	(finally)
+------						------
+1   1						0   1		Td: 57.5269ps	TpLH: 994.624ps
+1   1						1	0		Td: 129.31ps
+1   1						0   0		Td: 48.4914ps

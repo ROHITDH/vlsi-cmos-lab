@@ -1,0 +1,20 @@
+*** SPICE deck for cell nand{lay} from library VLSI_EXPERIMENTS
+*** Created on Sun Mar 27, 2022 08:17:17
+*** Last revised on Sun Mar 27, 2022 08:43:52
+*** Written on Sun Mar 27, 2022 08:44:04 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: nand{lay}
+Mnmos@0 gnd b net@0 gnd nmos L=0.4U W=2U AS=1.4P AD=4.4P PS=3.4U PD=12.4U
+Mnmos@1 net@0 a vout gnd nmos L=0.4U W=2U AS=1.733P AD=1.4P PS=4.4U PD=3.4U
+Mpmos@0 vdd b vout vdd pmos L=0.4U W=2U AS=1.733P AD=4.9P PS=4.4U PD=12.4U
+Mpmos@1 vout a vdd vdd pmos L=0.4U W=2U AS=4.9P AD=1.733P PS=12.4U PD=4.4U
+
+* Spice Code nodes in cell cell 'nand{lay}'
+vdd vdd 0 dc 5
+va a 0 pulse 0 5 0 1n 1n 5n 10n
+vb b 0 pulse 0 5 0 1n 1n 10n 15n
+.tran 300n
+.include C5_models.txt
+.END

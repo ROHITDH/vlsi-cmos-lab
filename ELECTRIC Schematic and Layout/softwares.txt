@@ -1,0 +1,6 @@
+ltspice-v4:  https://ltspice-iv.software.informer.com/download/
+electric:  https://www.staticfreesoft.com/productsFree.html
+           https://ftp.gnu.org/pub/gnu/electric/electricBinary-9.07.jar
+
+C5_models.txt  : http://cmosedu.com/videos/electric/tutorial2/C5_models.txt
+

@@ -1,0 +1,23 @@
+Keep Wp=2U as constant in all 3 cases.
+Wn = Wp
+--------
+Td		-  135.63ps	108.719ps
+TpLH	-  3.096ns
+TpHL	-  1.832ns
+
+
+Wn = 2Wp (Optimum Condition)
+---------
+Td - 121.098ps
+TpLH - 3.2172ns
+TpHL - 1.16129ns
+
+
+Wn = Wp/2
+---------
+Td - 277.419ps
+TpLH - 2.96774ns
+TpHL - 5.2129ns
+
+
+
