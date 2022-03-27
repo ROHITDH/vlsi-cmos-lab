@@ -1,0 +1,15 @@
+DC Analysis;
+    Cut-off Voltage = 1.07715V
+   
+
+Transient Analysis:
+    Vin = 1mV (p-p)
+    Vout = 59.7739mV (p-p)
+    gain = Vout/Vin =~ 60
+
+
+AC Analysis:
+    -3dB at 32.58dB
+    Phase = 129.421
+    Freq = 1.9682MHz
+

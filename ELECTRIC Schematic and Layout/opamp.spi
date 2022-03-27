@@ -1,0 +1,37 @@
+*** SPICE deck for cell opamp{sch} from library VLSI_EXPERIMENTS
+*** Created on Sun Mar 27, 2022 12:43:11
+*** Last revised on Sun Mar 27, 2022 13:09:16
+*** Written on Sun Mar 27, 2022 13:15:22 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: opamp{sch}
+Mnmos@0 net@4 vin1 net@11 gnd nmos L=0.666U W=108.2U
+Mnmos@1 net@11 net@57 vss gnd nmos L=0.666U W=1U
+Mnmos@2 vss net@57 net@57 gnd nmos L=0.666U W=1U
+Mnmos@3 vout net@37 gnd gnd nmos L=1.4U W=13.4U
+Mnmos@4 net@11 vin2 net@37 gnd nmos L=0.666U W=108.2U
+Mpmos@0 net@4 net@4 vdd vdd pmos L=0.666U W=9.5U
+Mpmos@1 vdd net@4 net@37 vdd pmos L=0.666U W=9.5U
+Mpmos@3 vdd vout vout vdd pmos L=16.8U W=3.4U
+IDCCurren@1 vdd net@57 DC 45uA
+
+* Spice Code nodes in cell cell 'opamp{sch}'
+vdd vdd 0 dc 1.8
+vss vss 0 dc -1.8
+*dc analysis
+*vin1 vin1 0 dc 1.8
+*vin2 vin2 0 dc 1.8
+*.dc vin1 -1.8 1.8 0.1
+*Transient Analysis
+*vin1 vin1 0 ac sin(cutoff 10m 1k)
+*vin2 vin2 0 dc cutoff
+*.tran 200u
+*AC Analysis
+vin1 vin1 0 ac sin(1.07715 0.5m 1k)
+vin2 vin2 0 dc 1.07715
+.ac DEC 100 100 10G
+.include C5_models.txt
+.END
