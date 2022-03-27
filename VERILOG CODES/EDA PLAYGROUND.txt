@@ -1,0 +1,6 @@
+Synchronous reset 4 bit up-down Counter: https://www.edaplayground.com/x/D2GD
+Four bit Adder: https://www.edaplayground.com/x/NCVm
+ALU 32 bit: https://www.edaplayground.com/x/NFaD
+JKFF : https://www.edaplayground.com/x/Sctj
+SRFF : https://www.edaplayground.com/x/7jsY
+TFF  : https://www.edaplayground.com/x/iFeE

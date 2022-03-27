@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/rohitlinux/VERILOG CODES/adder/adder_tb_isim_beh.exe" -prj "/home/rohitlinux/VERILOG CODES/adder/adder_tb_beh.prj" "work.adder_tb" "work.glbl" 
