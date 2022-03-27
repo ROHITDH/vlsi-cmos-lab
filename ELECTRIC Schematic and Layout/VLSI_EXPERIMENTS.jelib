@@ -6,7 +6,7 @@ Vlayout|lay
 Vschematic|sch
 
 # Cell cs_amplifier;1{sch}
-Ccs_amplifier;1{sch}||schematic|1648354133905|1648355381954||USER_topology_quick()S[]|USER_topology_quick_date()G1648354218261
+Ccs_amplifier;1{sch}||schematic|1648354133905|1648355381954|
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NOff-Page|conn@0||-9.5|25.5||||
 NOff-Page|conn@1||-31|22||||
