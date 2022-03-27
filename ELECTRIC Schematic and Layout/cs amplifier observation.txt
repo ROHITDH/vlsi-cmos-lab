@@ -1,0 +1,12 @@
+DC Analysis:
+	Cut-off voltage : 774.615mV
+
+Transient Analysis:
+	Vin = 2mV (peak-to-peak)
+	Vout = 28.7826mV (peak-to-peak)
+	Gain = Vout/Vin = 14.3913
+	
+AC Analysis:
+	-3db at 20.4641dB
+	Phase = 126.986
+	Freq = 2.76897GHz

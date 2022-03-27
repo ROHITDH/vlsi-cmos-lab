@@ -5,6 +5,55 @@ HVLSI_EXPERIMENTS|9.07
 Vlayout|lay
 Vschematic|sch
 
+# Cell cs_amplifier;1{sch}
+Ccs_amplifier;1{sch}||schematic|1648354133905|1648355381954||USER_topology_quick()S[]|USER_topology_quick_date()G1648354218261
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-9.5|25.5||||
+NOff-Page|conn@1||-31|22||||
+NOff-Page|conn@2||-7|22|||RR|
+NGround|gnd@0||-20|15.5||||
+NTransistor|nmos@0||-26.5|22|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S2|ATTR_width(D5G1;X0.5;Y-1;)S10|SIM_spice_model(D5G1;X1.5;Y1.5;)Snmos
+NTransistor|nmos@1||-13|22|||RRR||ATTR_length(D5G0.5;X-0.5;Y-1;)S2|ATTR_width(D5G1;X0.5;Y-1;)S20|SIM_spice_model(D5G1;X-1;Y1.5;)Snmos
+NWire_Pin|pin@0||-24.5|31||||
+NWire_Pin|pin@1||-15|31||||
+NWire_Pin|pin@2||-24.5|25||||
+NWire_Pin|pin@3||-19.5|25||||
+NWire_Pin|pin@4||-19.5|28||||
+NWire_Pin|pin@5||-20|31||||
+NWire_Pin|pin@7||-15|19||||
+NWire_Pin|pin@8||-24.5|19||||
+NWire_Pin|pin@9||-20|19||||
+NWire_Pin|pin@10||-15|25.5||||
+Ngeneric:Invisible-Pin|pin@11||-42|32|||||SIM_spice_card(D5G1;)S[vdd vdd 0 dc 5,vbias vbias 0 dc 1.2,*DC analysis,*----------------------------,vin vin 0 dc 5,.dc vin 0 5 0.1,*Transient Analysis,*-----------------------------,"*V[name] n+ n- type sin(dc_offset amplitude frequency)",*vin vin 0 ac sin(0 1m 1k),*.tran 100n,*AC analysis,*-----------------------------,*vin vin 0 ac sin(0 1m 1k),*.ac DEC 100 100 10G,.include C5_models.txt]
+NTransistor|pmos@0||-22.5|28|||RRR|2|ATTR_length(D5G0.5;X-0.5;Y-1;)S25|ATTR_width(D5G1;X0.5;Y-1;)S5|SIM_spice_model(D5G1;Y-3.5;)Spmos
+NTransistor|pmos@1||-17|28|||R|2|ATTR_length(D5G0.5;X-0.5;Y-1;)S25|ATTR_width(D5G1;X0.5;Y-1;)S5|SIM_spice_model(D5G1;Y-4;)Spmos
+NPower|pwr@0||-20|33.5||||
+Awire|net@0|||2700|pmos@0|s|-24.5|30|pin@0||-24.5|31
+Awire|net@2|||2700|pmos@1|d|-15|30|pin@1||-15|31
+Awire|net@6|||900|pmos@0|d|-24.5|26|pin@2||-24.5|25
+Awire|net@7|||900|pin@2||-24.5|25|nmos@0|d|-24.5|24
+Awire|net@8|||1800|pin@2||-24.5|25|pin@3||-19.5|25
+Awire|net@9|||1800|pmos@0|g|-21.5|28|pin@4||-19.5|28
+Awire|net@10|||1800|pin@4||-19.5|28|pmos@1|g|-18|28
+Awire|net@11|||2700|pin@3||-19.5|25|pin@4||-19.5|28
+Awire|net@12|||1800|pin@0||-24.5|31|pin@5||-20|31
+Awire|net@13|||1800|pin@5||-20|31|pin@1||-15|31
+Awire|net@14|||2700|pin@5||-20|31|pwr@0||-20|33.5
+Awire|net@16|||900|nmos@1|d|-15|20|pin@7||-15|19
+Awire|net@19|||0|pin@7||-15|19|pin@9||-20|19
+Awire|net@20|||0|pin@9||-20|19|pin@8||-24.5|19
+Awire|net@21|||2700|gnd@0||-20|17.5|pin@9||-20|19
+Awire|net@22|||900|pmos@1|s|-15|26|pin@10||-15|25.5
+Awire|net@23|||900|pin@10||-15|25.5|nmos@1|s|-15|24
+Awire|net@24|||1800|pin@10||-15|25.5|conn@0|a|-11.5|25.5
+Awire|net@25|||0|nmos@0|g|-27.5|22|conn@1|y|-29|22
+Awire|net@26|||0|conn@2|y|-9|22|nmos@1|g|-12|22
+Awire|net@27|||900|nmos@0|s|-24.5|20|pin@8||-24.5|19
+Evbias||D5G2;X-1.5;Y-2;|conn@1|y|I
+Evin||D5G2;X-1;Y2;|conn@2|y|I
+Evout||D5G2;X7;|conn@0|a|O
+X
+
 # Cell inverter;3{lay}
 Cinverter;3{lay}||mocmos|1648313592355|1648313592361||DRC_last_good_drc_area_date()G1648312860899|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1648312860899
 Ngeneric:Facet-Center|art@0||0|0||||AV
